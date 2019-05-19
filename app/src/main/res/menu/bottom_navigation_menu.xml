@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/homecolor"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/ic_search"
+        android:icon="@drawable/colorsearch"
+        android:title="Search">
+    </item>
+
+    <item
+        android:id="@+id/ic_notifications"
+        android:icon="@drawable/bell"
+        android:title="Notifications">
+    </item>
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/anim_settings"
+        app:showAsAction="always"
+        android:title="Settings">
+    </item>
+</menu>

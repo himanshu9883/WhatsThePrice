@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SearchOptionsFragment"
+    android:background="@drawable/beautyred">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_gravity="center">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Members"
+          android:gravity="center"
+          android:textSize="40dp"
+          android:fontFamily="cursive"
+          android:textColor="@color/pink"
+          android:id="@+id/members_option"/>
+      <TextView
+          android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:text="Products"
+          android:gravity="center"
+        android:fontFamily="cursive"
+          android:textSize="40dp"
+          android:textColor="@color/UltramarineBlue"
+           android:id="@+id/products_option"/>
+  </LinearLayout>
+
+</FrameLayout>

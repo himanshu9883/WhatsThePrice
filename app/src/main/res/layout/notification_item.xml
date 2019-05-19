@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook_avatar"
+        android:id="@+id/image_profile_nf"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/image_profile_nf"
+        android:layout_toStartOf="@+id/post_image_nf"
+        android:layout_toRightOf="@+id/image_profile_nf"
+        android:layout_toLeftOf="@+id/post_image_nf">
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_nf"
+            android:layout_marginRight="6dp"
+            android:text="username"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_nf"
+            android:text="perfect"
+            android:maxLines="5"
+            />
+
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/post_image_nf"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/dph"/>
+
+</RelativeLayout>

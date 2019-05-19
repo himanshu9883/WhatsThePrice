@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.EditProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/editpostheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editpostdp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/facebook_avatar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:id="@+id/emailEditPro"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editpostheader">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/usr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Username"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/celestialBlue"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/neonRed"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="user"
+                    android:id="@+id/editUser"
+                    android:fontFamily="cursive"
+                    android:textStyle="normal"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Bio"
+                    android:layout_gravity="left"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/celestialBlue"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/neonRed"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="About you"
+                    android:id="@+id/editBio"
+                    android:fontFamily="cursive"
+                    android:textStyle="normal"/>
+                <Spinner
+                    android:id="@+id/spin"
+                    android:popupBackground="@drawable/beautyred"
+                    android:layout_margin="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="Sex"/>
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saveUserbutton"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/buttonblue"
+                    android:text="Save Changes"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

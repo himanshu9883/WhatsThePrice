@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1bc9d8</color>
+    <color name="colorPrimaryDark">#19b4c2</color>
+    <color name="startblue">#fd0e35</color>
+
+    <color name="cyberGrape">#58427C</color>
+    <color name="MetallicSeaweed">#0A7E8c</color>
+    <color name="IlluminatingEmerald">#319177</color>
+
+    <color name="colorAccent">#ff4081</color>
+    <color name="endblue">#0b00e6</color>
+    <color name="pink">#ff00ff</color>
+    <color name="skyblue">#00bbee</color>
+    <color name="shadeOfRed">#fd0e35</color>
+    <color name="neonRed">#ff5349</color>
+    <color name="UnmellowYellow">#FFFF66</color>
+    <color name="electricLime">#CCFF00</color>
+    <color name="ScreaminGreen">#66ff66</color>
+    <color name="OgreOdor">#fd5240</color>
+    <color name="smashed_pumpkin">#ff6d3a</color>
+
+    <color name="UltramarineBlue">#3f26bf</color>
+    <color name="celestialBlue">#7070CC</color>
+    <color name="MaximumbluePurple">#ACACE6</color>
+
+
+
+
+</resources>

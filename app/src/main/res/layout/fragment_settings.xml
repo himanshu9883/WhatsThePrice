@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings_fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/designsetting"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/eggblue"
+
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bar2"
+            android:background="?android:attr/windowBackground">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eggblue"
+                android:id="@+id/toolbar"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/settingscolor"
+                        android:id="@+id/set"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settingsgradient"
+            android:orientation="vertical"
+            android:id="@+id/try1"
+            android:layout_below="@+id/bar2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/photo_settings"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/profile" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/username_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/userEmail_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="username@domain.com"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                 />
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/try1"
+            android:background="@drawable/eggblue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle_trans_white"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                >
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/profile_button"
+                    android:text="Profile"
+                    android:textStyle="italic|bold"
+                    android:textSize="15sp"
+                    android:fontFamily="cursive"
+                    android:background="@drawable/rounded_white"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/about_app"
+                    android:text="About Us"
+                    android:textStyle="italic|bold"
+                    android:textSize="15sp"
+                    android:fontFamily="cursive"
+                    android:background="@drawable/rounded_white"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/logout_settings"
+                    android:text="LogOut"
+                    android:textStyle="italic|bold"
+                    android:textSize="15sp"
+                    android:fontFamily="cursive"
+                    android:background="@drawable/rounded_white"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/share_settings"
+                    android:text="Share to Friends"
+                    android:background="@drawable/rounded_white"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic|bold"
+                    android:textSize="15sp"
+                    android:fontFamily="cursive"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

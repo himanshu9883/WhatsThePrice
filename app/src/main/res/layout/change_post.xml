@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@drawable/eggblue">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tv_post_owner_display_change"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tv_post_username_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Username"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_delete_forever_black_24dp"
+            android:id="@+id/trash_change"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="10h50"
+            android:id="@+id/post_time_change"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/tv_post_display_change"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dph"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="338dp">
+
+
+        <EditText
+            android:id="@+id/tv_post_text_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Caption"
+            android:textColor="#000"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="394dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/eggblue"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:text="Product"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+
+                android:textSize="15sp"
+                android:id="@+id/post_display_product_change"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Product"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:text="Price"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#000"
+
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/Rs"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:fontFamily="cursive"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/post_display_price_change"
+                android:maxLines="3"
+                android:textColor="#000"
+
+                android:textSize="18sp"
+                android:text="Price"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="6dp"
+                android:text="Shopping Place"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="15sp"
+                android:id="@+id/post_display_place_change"
+                android:maxLines="3"
+                android:text="Where did you buy it?"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+<android.support.v7.widget.AppCompatButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save Changes"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:id="@+id/editPost"
+    android:focusedByDefault="true"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorPrimaryDark"/>
+
+
+
+
+</LinearLayout>

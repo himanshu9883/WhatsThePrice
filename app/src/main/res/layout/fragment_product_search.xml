@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ProductSearchFragment">
+
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="400dp">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:id="@+id/barsettings_product1"
+    android:layout_height="wrap_content"
+
+    android:background="?android:attr/windowBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_bar_product1"
+            android:background="@android:color/transparent"
+            android:hint="Search Product..."
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+</android.support.design.widget.AppBarLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/barsettings_product1"
+    android:id="@+id/search_recyclerView_product1">
+
+</android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+
+</FrameLayout>

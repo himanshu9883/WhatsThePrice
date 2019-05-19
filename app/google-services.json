@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "512192434176",
+    "firebase_url": "https://whatstheprice-16aa3.firebaseio.com",
+    "project_id": "whatstheprice-16aa3",
+    "storage_bucket": "whatstheprice-16aa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512192434176:android:b957dd72012d4d6d",
+        "android_client_info": {
+          "package_name": "com.techrums.whatstheprice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512192434176-243pck31qa4k8piqe74bebsls07rv04k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techrums.whatstheprice",
+            "certificate_hash": "af26af96bebb2fd3718220121cbeb149e8789c63"
+          }
+        },
+        {
+          "client_id": "512192434176-llgo8dkao3spr641kbmtre5h2cre2ljd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpUM3IK8nV1bldUSvjJkrRhB_GRvs5So4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512192434176-llgo8dkao3spr641kbmtre5h2cre2ljd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

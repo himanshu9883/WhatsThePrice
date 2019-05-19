@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tv_noti_owner_display"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/tv_noti_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="Username"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_noti_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:inputType="textMultiLine"
+            android:text="has posted about a new activity"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:layout_gravity="top|center|left"/>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10h50"
+            android:layout_marginRight="16dp"
+        android:id="@+id/noti_time"
+            android:layout_gravity="bottom|right|center"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

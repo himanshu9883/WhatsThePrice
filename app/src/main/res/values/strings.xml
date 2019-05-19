@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Whats the price</string>
+    <string name="Rs">\u20B9</string>
+    <string name="rs">\u20A8</string>
+    <string name="web_client_id">512192434176-llgo8dkao3spr641kbmtre5h2cre2ljd.apps.googleusercontent.com</string>
+    <string-array name="brew_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Third Gender</item>
+        <item>Unknown</item>
+
+    </string-array>
+
+    <string name="experience_prompt">Choose a country</string>
+
+
+    <string-array name="experience">
+        <item>Noob(Newbie)</item>
+        <item>Not new but not skilled either</item>
+        <item>Learning</item>
+        <item>Talented</item>
+        <item>Master Skills</item>
+        <item>Legendary Skills</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
